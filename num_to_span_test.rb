@@ -20,7 +20,11 @@ class TestNumToSpan < MiniTest::Unit::TestCase
 		assert_equal "cero", 0.to_spanish 
 	end
 
-	
+	def test_to_span_trans_1_to_uno
+		assert_equal "uno", 1.to_spanish
+	end
+
+
 
 
 
