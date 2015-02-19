@@ -9,7 +9,10 @@
 class Fixnum
 
 	def to_spanish
-
+		"cero"
 	end
+
+
+	
 
 end
