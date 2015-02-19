@@ -10,10 +10,9 @@ class Fixnum
 
 	def to_spanish
 		
-		names_as_array = %w(cero uno)
+		names_as_array = %w(cero uno dos tres cuatro cinco seis siete ocho nueve diez once doce trece catorce quince dieciséis diecisiete dieciocho diecinueve)
 
 		names_as_array[self]
-
 
 	end
 
