@@ -43,4 +43,16 @@ class TestNumToSpan < MiniTest::Unit::TestCase
 		assert_equal "setenta y siete", 77.to_spanish
 	end
 
+	def test_to_span_trans_100_to_cien
+		assert_equal "cien", 100.to_spanish
+	end
+
+	def test_to_span_trans_136_to_cien_treinta_y_seis
+		assert_equal "cientos treinta y seis", 136.to_spanish
+	end	
+
+	def test_to_span_trans_333_to_tresciento_trienta_y_tres
+		assert_equal "trescientos treinta y tres", 333.to_spanish
+	end
+
 end
