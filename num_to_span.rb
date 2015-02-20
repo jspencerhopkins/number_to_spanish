@@ -12,7 +12,22 @@ class Fixnum
 
 		hundreds_names = %w(blank blank doscientos trescientos cuatrocientos quinientos seiscientos setecientos ochocientos novecientos)
 
-		if self > 200
+		
+
+
+		if self > 600
+			internal_calculation(100, "cientos")		
+
+		elsif self > 500
+			tens = (self - 500) / 10
+			ones = (self - 500) % 10
+			if ones > 0
+				"quinientos #{tens_names[tens]} y #{ones.to_spanish}"
+			else
+				tens_names[tens]
+			end
+
+		elsif self > 200
 			internal_calculation(100, "cientos")
 
 		elsif self > 100
