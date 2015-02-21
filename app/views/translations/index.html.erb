@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+    	<th>Number</th>
+      <th>Roman Numeral</th>
+      <th>Spanish</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  	<% 1000.times do |num| %>
+	    <tr align="center">
+	      <td><%= num %></td>
+	      <td><%= RomanNumerals.to_roman(num) %></td>
+	      <td><%= I18n.with_locale(:es) { num.to_words } %></td>
+	    </tr>
+	    <% end %>
+  </tbody>
+</table>
